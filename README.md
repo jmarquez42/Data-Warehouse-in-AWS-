@@ -63,11 +63,11 @@ LIMIT 5`
 
 <table>
 				<tbody>
-					<tr>
-						<td>artists</td>
-						<td>songs</td>
-						<td>numberreproductions</td>
-					</tr>
+					<thr>
+						<td><strong>artists</strong></td>
+						<td><strong>songs</strong></td>
+						<td><strong>numberreproductions</strong></td>
+					</thr>
 					<tr>
 						<td>Dwight Yoakam</td>
 						<td>You&#39;re The One</td>
