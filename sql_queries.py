@@ -79,7 +79,7 @@ songplay_table_create = ("""
 user_table_create = ("""
     CREATE TABLE IF NOT EXISTS users 
     ( 
-         user_id INT PRIMARY KEY
+         user_id INT NOT NULL PRIMARY KEY
         ,first_name VARCHAR(255)  NULL
         ,last_name VARCHAR(255)  NULL
         ,gender VARCHAR(255) NOT NULL
@@ -150,7 +150,8 @@ songplay_table_insert = ("""
 user_table_insert = ("""
     INSERT INTO users 
     SELECT DISTINCT userId, firstName, lastName, gender, level
-    FROM staging_events;
+    FROM staging_events
+    WHERE userId is not NULL;
 """)
 
 song_table_insert = ("""
